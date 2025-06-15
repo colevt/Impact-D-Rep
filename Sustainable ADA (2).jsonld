@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Sustainable ADA",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "",
+      "sha256": "c8a5262504ba5f7b646e05a2da74584f67c851e956b8b7c19da2df5e66f96a15"
+    },
+    "motivations": "We are motivated by the immense potential of Cardano’s decentralized governance to create meaningful global impact. With backgrounds in sustainability, technology, and blockchain advocacy, our team believes that being a DRep allows us to bridge the gap between blockchain innovation and sustainable development initiatives. We are driven by the desire to see blockchain not just as a financial tool but as a transformative force in addressing systemic issues, such as energy use and equitable access to resources. Professionally, our experiences in environmental advocacy, education, and blockchain development provide us with the tools to evaluate proposals holistically and ensure alignment with sustainable practices.",
+    "objectives": "As a DRep, Sustainable ADA aims to promote decision-making that ensures the long-term sustainability and growth of the Cardano ecosystem while aligning with broader environmental, social, and governance (ESG) values. Our core belief is that blockchain technology can serve as a powerful tool to address global challenges, from climate change to financial inclusion. We seek to represent and advocate for proposals that prioritize environmental sustainability, ethical governance, and innovative solutions to real-world problems. By actively engaging with stakeholders, including small ADA holders and sustainability-focused projects, we aspire to amplify voices that share these values and ensure responsible growth of the Cardano network.",
+    "paymentAddress": "addr1qy6day5y94ls09xjqnvhwypczjslsv9cr4z5ed9az66p0qzedp5u4p8vnxrgd8gw7ph49eg3a4a5cfdf6m27nm7r8dzs5w4fwd",
+    "qualifications": "Sustainable ADA has been an active member of the Cardano community since 2019, driving initiatives for sustainable growth and effective governance. We launched the first Cardano Impact Report, assessing ecosystem projects’ environmental and social contributions while setting standards for sustainability. We developed the Project Catalyst Impact Measurement System (IMS) to track and quantify project impacts, ensuring Catalyst-funded initiatives meet performance goals. Our team organized and created content for 25 in-person Project Catalyst Working Group workshops worldwide, shaping governance improvements. We also launched Impact Web3, powered by the Proof of Impact Platform, to measure outcomes, and Domino DAO, a decentralized organization promoting collective positive global impact. With a deep understanding of sustainability frameworks like the UN SDGs, we evaluate proposals based on their societal and environmental impacts.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Website",
+        "uri": "https://sustainableada.com/"
+      },
+      {
+        "@type": "Link",
+        "label": "x",
+        "uri": "https://x.com/SustainableADA"
+      },
+      {
+        "@type": "Link",
+        "label": "Linkedin",
+        "uri": "https://www.linkedin.com/company/sustainableada/"
+      },
+      {
+        "@type": "Identity",
+        "label": "Sustainable ADA - DRep",
+        "uri": "https://sustainableada.com/drep/"
+      }
+    ]
+  }
+}
